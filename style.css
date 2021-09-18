@@ -1,0 +1,416 @@
+body {
+    background: #423d3c;
+    margin: 0;
+}
+:root {
+    --color:#F4F4F4;
+    --color1:#656565;
+    --color2:#979797;
+}
+.entete {
+    background-color:black;
+    box-shadow: 14px 0 8px 5px rgba(0, 0, 0, 0.6);
+    height: 60px;
+    /*position: absolute;*/
+    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s ease-out forwards;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    background-color:#fff;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    animation-delay: 5s;
+}
+
+.menu-bar {
+    text-align: center;
+    width: 80px;
+}
+
+.menu-bar ul {
+    display: inline-flex;
+    list-style:none;
+    color: white;
+}
+
+.menu-bar ul li {
+    width: 50px;
+    margin-right: 2px;
+    padding: 10px;
+    font-size: 85.7%;
+}
+
+.menu-bar .li2 {
+    width: 100px;
+}
+
+.menu-bar ul li a {
+    font-family:Arial, Helvetica, sans-serif ;
+    text-decoration: none;
+    color: #fff;
+}
+
+.active, .menu-bar ul li:hover {
+    background-color: #423d3c;
+}
+
+.entete img {
+    height: 70px;
+    width: 70px;
+}
+
+div.page {
+    background-color: white;
+    margin: 30px 10%;
+    margin-top: 0;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+div.corps {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1.titre {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: white;
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    padding: 10px;
+    animation: apparition 0.8s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+div.corps h1.titre1 {
+    font-size: 30px;
+    text-align: center;
+    border-bottom: solid 2px #6C829D;
+    padding-bottom: 4px;
+}
+
+div.corps h2 {
+    border: solid 1px #6C829D;
+    font-size: 18px;
+    text-align: center;
+    padding:3px;
+}
+
+/*section gris*/
+div.section-gris {
+    background-color: var(--color);
+    height: 90px;
+    padding:30px 10px 10px 10px;
+}
+.separateur {
+    background-color: var(--color1);
+    height: 1px;
+    width: 150px;
+    margin: auto;
+}
+
+.par1 {
+    margin: 0;
+    text-align: center;
+    color: var(--color1);
+    font-size: 20px;
+    font-family: arial;
+    padding-top: 10px;
+}
+
+.section {
+    padding-top:20px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-bottom: 10px;
+}
+
+/*section 2*/
+.section2 {
+    height: 300px;
+    width: 413,8px;
+    background-color: #423d3c;
+}
+.h2 {
+    margin-top: 0;
+}
+.news {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    background-color: black;
+}
+.col3 {
+    color: white;
+}
+
+.section3 {
+    height: 230px;
+    width: 413,8px;
+    display: flex;
+    justify-content: center;
+}
+
+.col3-1 {
+    text-align: center;
+}
+
+.section4 {
+    height: 230px;
+    width: 413,8px;
+    background-color: #423d3c;
+    display: block;
+}
+
+.lign {
+    display: flex;
+    justify-content:center;
+}
+
+.livre {
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.4);
+}
+/*cover start*/
+
+div.position {
+    position: relative;
+    overflow: hidden;
+
+}
+
+div.couverture {
+    background: url(3.png);
+}
+
+img.image {
+    width: 20%;
+    background-color: lightgray;
+    height: 500px;
+    object-fit: cover;
+}
+
+div.slides {
+    display: flex;
+    width: 500%;
+}
+
+table.table {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: #6C829DC0 ;
+    height: 50px;
+    transition: 1s;
+}
+
+table.table td {
+    text-align: center;
+    width: 32%;
+}
+
+table.table th {
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 32%;
+}
+
+
+img.first {
+    animation: nope 30s ease infinite;
+}
+@keyframes nope {
+    20% {
+        margin-right: -20% ;
+        }
+    40% {
+        margin-right: -40% ;
+    }
+    60% {
+        margin-right: -60% ;
+    }
+    80% {
+        margin-right: -80% ;
+    }
+    100% {
+        margin-left: 0% ;
+    }
+}
+
+/*cover end*/
+div.corps p.num {
+    background-color: #6C829D;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    vertical-align: top;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+img.image2 {
+    width: 50%;
+    padding-left: 25%;
+    border-right: solid 1px black;
+
+}
+
+div.bas-page {
+    background-color: black;
+    height: 200px;
+    display: flex;
+    padding-top: 20px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.contact {
+    margin-right: 50px;
+}
+
+.form1 {
+    height: 90px;
+    width: 90px;
+}
+.form {
+    margin-right: 30px;
+}
+
+.section img {
+    margin-left: 15px;
+}
+
+h3 {
+    margin-left: 15px;
+}
+.section a {
+    text-decoration: none;
+    color: black;
+}
+
+.livre img {
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (max-width:767px) {
+
+    div.page {
+        margin: 0;
+        min-width: 560px; /*le problème*/
+        max-width: 767px;
+    }
+
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+    
+    .entete img {
+        height: 60px;
+        width: 60px;
+    }
+
+    h1.titre {
+        top: 40%;
+        left: 33%;
+        font-size: 30px;
+    }
+    table.table th {
+        font-size: 12px;
+    }
+    div.section-gris {
+        height: 70px;
+    }
+    .par1 {
+        font-size: 18px;
+    }
+
+    div.section {
+        padding-left: 10px;
+    }
+
+    div.lign {
+        margin-right: 8px;
+    }
+
+    .section3 {
+        display: block;
+        height: 440px;
+    }
+
+    .section3 div {
+        display: inline-block;
+        margin-left: 70px;
+    }
+
+    div.col3-4 {
+        margin-left: 40px;
+    }
+
+    .news {
+        font-size: 15px;
+    }
+
+    .menu-bar {
+        width: 350px;
+    }
+
+    .menu-bar ul li {
+        font-size: 70%;
+    }
+}
+
+@media only screen and(min-width: 900px) {
+
+    .page {
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .entete {
+        max-width: 960px;
+    }
+}
